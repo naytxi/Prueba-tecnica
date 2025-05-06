@@ -141,6 +141,7 @@
   }
 
   form label {
+    display: block;
     margin-top: 1rem;
     font-weight: bold;
     font-size: 1rem;
@@ -272,7 +273,7 @@
     box-shadow: 0 2px 8px var(--colortexto);
     display: flex;
     flex-wrap: wrap;
-    gap: 1.7rem;
+    gap: 2rem;
     padding: 2rem 5rem;
     justify-content: center;
     text-align: center;
