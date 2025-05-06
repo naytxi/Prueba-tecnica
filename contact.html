@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_links">
+            <a href="index.html" class="navbar_link">Inicio</a>
+            <a href="nosotros.html" class="navbar_link">Nosotros</a>
+            <a href="contact.html" class="navbar_link">Contacto</a>
+            <a href="login.html" class="navbar_link">Login</a>
+        </div>
+    </nav>
+<main class="contacto">
+    <section class="contacto_form">
+        <h2>Contactanos</h2>
+        <form>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" value="Maria" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" value="Perez Garcia" name="apellidos" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="mariagl@gmail.com" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" row="5"> </textarea>
+
+            <label>
+                <input type="checkbox" id="privacidad" required>
+                Acepto las <a href="politicas.html" target="_blank">politicas de privacidad</a>
+            </label>
+            
+            <button type="submit" id="submitBtn">Enviar</button>
+
+        </form>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="footer_links">
+            <a href="">Google</a>
+            <a href="">Youtube</a>
+            <a href="">Wikipedia</a>
+        </div>
+        <p>© 2025 Consejos Tech. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
