@@ -10,34 +10,38 @@
 <body>
 
     <nav class="navbar">
-        <div class="navbar_links">
+
+        <div class="navbar__links">
             <a href="index.html" class="navbar_link">Inicio</a>
             <a href="nosotros.html" class="navbar_link">Nosotros</a>
             <a href="contact.html" class="navbar_link">Contacto</a>
             <a href="login.html" class="navbar_link">Login</a>
-        </div>
+        </div>        
+        
+        <button class="navbar__toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
     </nav>
 
     <header class="header">
-        <img src="" alt="personas usando tecnologia" class="header_img">
+        <img src="/imagenes/imagen4.jpg" alt="personas usando tecnologia" class="header_img">
         <h1>CONSEJOS TECH</h1>
         <p>Consejos tecnológicos simples para todas las edades</p>
     </header>
-    
+
+    <main class="main_container">
     <section class="noticias">
         <h2>Noticias Recientes</h2>
         <article class="noticia">
-            <img src="" alt="">
             <h3>¿Que es una copia de seguridad?</h3>
             <p>Aprende lo basico para proteger e contenido de tu ordenador, tablet o movil</p>
-            <a href="">Accede a la noticia</a>
+            <a href="https://support.microsoft.com/es-es/windows/realizar-copias-de-seguridad-y-restaurar-con-copias-de-seguridad-de-windows-87a81f8a-78fa-456e-b521-ac0560e32338">Accede a la noticia</a>
         </article>
-
+        
         <article class="noticia">
-            <img src="" alt="">
             <h3>Cuidado con la ultima estafa</h3>
             <p>Te contamos las ultimas novedad en cuanto a estafas que circulan por la red</p>
-            <a href="">Accede a la noticia</a>
+            <a href="https://elpais.com/economia/2025-04-30/nueva-estafa-telefonica-tras-el-apagon-facua-alerta-de-falsas-compensaciones-del-20-de-la-factura.html">Accede a la noticia</a>
         </article>
     </section>
 
@@ -51,13 +55,20 @@
             <p>No me tengo que preocupar de buscar info sobre estafas por la web, aqui las recoge, las explica y me da consejos sobre como evitarlas</p>
             <small>Maria.L</small>
         </div>
+
+        <div class="opinion">
+            <p>Esta pagina me ha ayudado con los consejos de uso de la tecnologia con mi hijo</p>
+            <small>Julia.B</small>
+        </div>
+
     </section>
+</main>
 
     <footer class="footer">
         <div class="footer_links">
-            <a href="">Google</a>
-            <a href="">Youtube</a>
-            <a href="">Wikipedia</a>
+            <a href="https://www.google.com/">Google</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+            <a href="https://www.wikipedia.org/">Wikipedia</a>
         </div>
         <p>© 2025 Consejos Tech. Todos los derechos reservados.</p>
     </footer>

@@ -10,13 +10,14 @@
 <body>
 
     <nav class="navbar">
-        <div class="navbar_links">
+        <div class="navbar__links">
             <a href="index.html" class="navbar_link">Inicio</a>
             <a href="nosotros.html" class="navbar_link">Nosotros</a>
             <a href="contact.html" class="navbar_link">Contacto</a>
             <a href="login.html" class="navbar_link">Login</a>
         </div>
     </nav>
+
 <main class="contacto">
     <section class="contacto_form">
         <h2>Contactanos</h2>
@@ -34,7 +35,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" row="5"> </textarea>
 
-            <label>
+            <label class="check_privacidad" >
                 <input type="checkbox" id="privacidad" required>
                 Acepto las <a href="politicas.html" target="_blank">politicas de privacidad</a>
             </label>
@@ -43,6 +44,14 @@
 
         </form>
     </section>
+
+    <section class="contacto_mapa">
+        <h2>Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0866273026193!2d-122.42177848438217!3d37.77902687975837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b3f99eb61%3A0xf99b104ca3e4db56!2sSan%20Francisco%20City%20Hall!5e0!3m2!1ses!2s!4v1714500000000!5m2!1ses!2s"
+          width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+      </section>
+
 </main>
     <footer class="footer">
         <div class="footer_links">
