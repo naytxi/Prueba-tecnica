@@ -13,6 +13,8 @@ const imagen = document.getElementById('header_img');
 const privacidadCheck = document.getElementById('privacidad');
 const privacidadBoton = document.getElementById('privacidadBtn');
 const ojo = document.getElementById('ojito');
+const userEmail =document.getElementById('user-email');
+const userPassword = document.getElementById('user-password');
 
 if(botonLogin && usuario && contrasena){
     botonLogin.addEventListener('click', function(event){
@@ -26,9 +28,22 @@ if(botonLogin && usuario && contrasena){
             return;
         }
         else{
+            const userData = {
+                "email":usuario.value,
+                "password": contrasena.value
+            }
+            localStorage.setItem('usuarioLogueado', JSON.stringify(userData))
             alert("Login correcto Bienvenido")
+            window.location.href = "user.html";
         }
     })
+}
+
+if(userEmail && userPassword){
+    const datosUsuario = localStorage.getItem('usuarioLogueado');
+    const userData = JSON.parse(datosUsuario);
+    userEmail.textContent = userData.email;
+    userPassword.textContent = userData.password;
 }
 
 if(ojo && contrasena){

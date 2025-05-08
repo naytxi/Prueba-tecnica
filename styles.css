@@ -5,7 +5,7 @@
   }
 
   :root{
-    --colorprimario: #FFFDD0;
+    --colorprimario: #fdf4e0;
     --colorsecundario: #404040;
     --colortexto: #57381b;
     --colorblanco:  #ffffff;
@@ -211,6 +211,7 @@
     flex-direction: row;
     gap: 1.5rem;
     opacity: 0.7;
+    
   }
 
  .nosotros img{
@@ -234,6 +235,7 @@
   .expertos h3{
     font-size: 2rem;
     text-align: center;
+    margin-top: 5rem;
   }
 
   .expertos ul {
@@ -294,7 +296,8 @@
     border-radius: 70%;
   }
 
-  .login_form{
+  .login_form,
+  .user_info{
     flex: 1;
     max-width: 500px;
     background-color: var(--colorblanco);
@@ -307,6 +310,23 @@
     justify-content: center;
     text-align: center;
   }
+  .user_Btn{ 
+      margin-top: 1.5rem;
+      background-color: var(--colortexto);
+      color: var(--colorblanco);
+      border: none;
+      padding: 0.75rem;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .user_Btn:hover {
+      background-color: var(--colorsecundario);
+      transition: 0.7s;
+    }
+  
 
   .footer {
     text-align: center;
@@ -342,7 +362,8 @@
         padding: 3rem;
       }
 
-    .login_form{
+    .login_form,
+    .user_info{
         max-width: 400px;
         padding: 1rem;
         gap: 1rem;
@@ -396,7 +417,8 @@
         padding: 1rem;
       }
 
-    .login_form{
+    .login_form,
+    .user_info{
         max-width: 400px;
         padding: 1rem;
         gap: 1rem;
