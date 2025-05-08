@@ -46,6 +46,7 @@
 
   .navbar_selector{
   margin-left: 70rem;
+  background-color: var(--colorprimario);
   }
 
   .navbar_toggle {
@@ -266,7 +267,7 @@
     color: var(--colortexto);
   }
   
-  .expertos_img {
+  .expertos_img{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -276,9 +277,21 @@
   }
 
   .login{
+    margin-top: 5rem;
     text-align: center;
     display: flex;
     justify-content: center;
+  }
+
+  .login_title{
+    margin-left: 3rem;
+  }
+
+  .ojito{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0px 8px var(--colortexto);
+    border-radius: 70%;
   }
 
   .login_form{

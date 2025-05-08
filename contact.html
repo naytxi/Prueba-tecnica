@@ -6,6 +6,7 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +18,18 @@
             <a href="contact.html" class="navbar_link">Contacto</a>
             <a href="login.html" class="navbar_link">Login</a>
         </div>        
-        
+
+        <button class="navbar_toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <select id="language_selector" class="navbar_selector">
+            <option value="es">Español</option>
+            <option value="en-US">Ingles</option>
+        </select>
+
+        <p id="date"></p>
+
     </nav>
 
 <main class="contacto">
@@ -37,6 +49,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" row="5"> </textarea>
 
+            <p>Selecciona la Sede:</p>
             <select>
                 <option>Bizkaia</option>
                 <option>Araba</option>
@@ -48,7 +61,7 @@
                 Acepto las <a href="politicas.html" target="_blank">politicas de privacidad</a>
             </label>
             
-            <button type="submit" id="submitBtn">Enviar</button>
+            <button type="submit" id="privacidadBtn">Enviar</button>
 
         </form>
     </section>

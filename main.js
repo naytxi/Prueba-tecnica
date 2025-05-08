@@ -10,6 +10,9 @@ const botonLogin = document.getElementById('submitBtn');
 const selector = document.getElementById('language_selector');
 const parrafo = document.getElementById('date');
 const imagen = document.getElementById('header_img');
+const privacidadCheck = document.getElementById('privacidad');
+const privacidadBoton = document.getElementById('privacidadBtn');
+const ojo = document.getElementById('ojito');
 
 if(botonLogin && usuario && contrasena){
     botonLogin.addEventListener('click', function(event){
@@ -24,6 +27,19 @@ if(botonLogin && usuario && contrasena){
         }
         else{
             alert("Login correcto Bienvenido")
+        }
+    })
+}
+
+if(ojo && contrasena){
+    ojo.addEventListener('click', function(){
+        if(contrasena.type === "password"){
+            contrasena.type = "text";
+            ojo.src = "/imagenes/ojitoabierto.jpg";
+        }
+        else{ 
+            contrasena.type = "password";
+            ojo.src = "/imagenes/ojitocerrado.jpg";
         }
     })
 }
@@ -55,5 +71,18 @@ if(imagen){
     })
 }
 
+if(privacidadCheck && privacidadBoton){
+
+    privacidadBoton.style.display = privacidadCheck.checked ? 'block' : 'none';
+
+    privacidadCheck.addEventListener('change', function(){
+        if(this.checked){
+            privacidadBoton.style.display = 'block';
+        }
+        else{
+            privacidadBoton.style.display = 'none';
+        }
+    });
+}
 
 })
